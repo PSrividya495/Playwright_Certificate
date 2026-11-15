@@ -1,14 +1,20 @@
 {
-  "name": "Playwright_Certificate",
+  "name": "playwright_project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:lambdatest": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-lambdatest.ps1",
+    "test:report": "playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.65.1"
+    "@lambdatest/playwright-node-sdk": "^1.0.6",
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6"
   }
 }

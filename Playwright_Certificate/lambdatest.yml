@@ -1,0 +1,14 @@
+build: "Playwright Certification"
+name: "Playwright Certification Spec"
+video: true
+console: true
+network: true
+commandLog: true
+
+platforms:
+  - platform: "Windows 11"
+    browserName: "pw-chromium"
+    browserVersion: "latest"
+  - platform: "Windows 11"
+    browserName: "pw-firefox"
+    browserVersion: "latest"
